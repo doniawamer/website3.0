@@ -1,0 +1,94 @@
+// @font-face {
+//     font-family: "Carneys";
+//     font-weight: normal;
+//     font-display: swap;
+//     src: url('./public/assets/fonts/Carneys-Gallery.otf') format('otf');
+//   }
+//   @font-face {
+//     font-family: "Manrope";
+//     font-weight: normal;
+//     font-display: swap;
+//     src: url("./public/assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+//   }
+//   @font-face {
+//     font-family: "Manrope";
+//     font-weight: normal;
+//     font-display: swap;
+//     src: url("./public/assets/fonts/Manrope-Medium.ttf") format("truetype");
+//   }
+//   @font-face {
+//     font-family: "Manrope";
+//     font-weight: normal;
+//     font-display: swap;
+//     src: url("./public/assets/fonts/Manrope-Regular.ttf") format("truetype");
+//   }
+
+//   @font-face {
+//     font-family: "Manrope";
+//     font-weight: normal;
+//     font-display: swap;
+//     src: url("./public/assets/fonts/Manrope-Light.ttf") format("truetype");
+//   }
+
+//   $font-primary: "Manrope", "Tahoma", "Arial", "Helvetica", sans-serif;
+//   $font-secondary: "Carneys", "Verdana", "Geneva", sans-serif;
+    
+//   $font-size-base: 20px;
+//   $font-size-large: 1.1rem;
+//   $font-size-small: 0.8rem;
+  
+//   @mixin body-text {
+//     font-family: $font-primary;
+//     font-weight: normal;
+//     font-size: $font-size-base;
+//     line-height: 1.5;
+//   }
+  
+//   @mixin body-text-large {
+//     font-family: $font-primary;
+//     font-weight: normal;
+//     font-size: $font-size-large;
+//     line-height: 1.5;
+//   }
+  
+//   @mixin body-text-small {
+//     font-family: $font-primary;
+//     font-weight: normal;
+//     font-size: $font-size-small;
+//     line-height: 1.5;
+//   }
+  
+//   @mixin h1 {
+//     font-family: $font-secondary;
+//     font-weight: bold;
+//     font-size: 2rem;
+//     line-height: 1.1;
+//   }
+  
+//   @mixin h2 {
+//     font-family: $font-secondary;
+//     font-weight: bold;
+//     font-size: 1.8rem;
+//     line-height: 1.1;
+//   }
+  
+//   @mixin h3 {
+//     font-family: $font-secondary;
+//     font-weight: bold;
+//     font-size: 1.2rem;
+//     line-height: 1.1;
+//   }
+  
+//   @mixin h4 {
+//     font-family: $font-secondary;
+//     font-weight: bold;
+//     font-size: 1.1rem;
+//     line-height: 1.5;
+//   }
+  
+//   @mixin h5 {
+//     font-family: $font-secondary;
+//     font-weight: bold;
+//     font-size: 1rem;
+//     line-height: 1.5;
+//   }
