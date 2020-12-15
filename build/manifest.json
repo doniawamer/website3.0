@@ -1,6 +1,6 @@
 {
   "short_name": "Donia Amer",
-  "name": "Donia Amer Portfolio",
+  "name": "Donia Amer | Portfolio",
   "icons": [
     {
       "src": "images/favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "images/favicon.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "images/favicon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }

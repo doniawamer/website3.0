@@ -1,94 +1,126 @@
-// @font-face {
-//     font-family: "Carneys";
-//     font-weight: normal;
-//     font-display: swap;
-//     src: url('./public/assets/fonts/Carneys-Gallery.otf') format('otf');
-//   }
-//   @font-face {
-//     font-family: "Manrope";
-//     font-weight: normal;
-//     font-display: swap;
-//     src: url("./public/assets/fonts/Manrope-SemiBold.ttf") format("truetype");
-//   }
-//   @font-face {
-//     font-family: "Manrope";
-//     font-weight: normal;
-//     font-display: swap;
-//     src: url("./public/assets/fonts/Manrope-Medium.ttf") format("truetype");
-//   }
-//   @font-face {
-//     font-family: "Manrope";
-//     font-weight: normal;
-//     font-display: swap;
-//     src: url("./public/assets/fonts/Manrope-Regular.ttf") format("truetype");
-//   }
+@font-face {
+    font-family: "Carneys";
+    font-weight: normal;
+    font-display: swap;
+    src: url('../assets/fonts/Carneys-Gallery.otf');
+}
 
-//   @font-face {
-//     font-family: "Manrope";
-//     font-weight: normal;
-//     font-display: swap;
-//     src: url("./public/assets/fonts/Manrope-Light.ttf") format("truetype");
-//   }
+@font-face {
+    font-family: "Manrope-SemiBold";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
 
-//   $font-primary: "Manrope", "Tahoma", "Arial", "Helvetica", sans-serif;
-//   $font-secondary: "Carneys", "Verdana", "Geneva", sans-serif;
-    
-//   $font-size-base: 20px;
-//   $font-size-large: 1.1rem;
-//   $font-size-small: 0.8rem;
-  
-//   @mixin body-text {
-//     font-family: $font-primary;
-//     font-weight: normal;
-//     font-size: $font-size-base;
-//     line-height: 1.5;
-//   }
-  
-//   @mixin body-text-large {
-//     font-family: $font-primary;
-//     font-weight: normal;
-//     font-size: $font-size-large;
-//     line-height: 1.5;
-//   }
-  
-//   @mixin body-text-small {
-//     font-family: $font-primary;
-//     font-weight: normal;
-//     font-size: $font-size-small;
-//     line-height: 1.5;
-//   }
-  
-//   @mixin h1 {
-//     font-family: $font-secondary;
-//     font-weight: bold;
-//     font-size: 2rem;
-//     line-height: 1.1;
-//   }
-  
-//   @mixin h2 {
-//     font-family: $font-secondary;
-//     font-weight: bold;
-//     font-size: 1.8rem;
-//     line-height: 1.1;
-//   }
-  
-//   @mixin h3 {
-//     font-family: $font-secondary;
-//     font-weight: bold;
-//     font-size: 1.2rem;
-//     line-height: 1.1;
-//   }
-  
-//   @mixin h4 {
-//     font-family: $font-secondary;
-//     font-weight: bold;
-//     font-size: 1.1rem;
-//     line-height: 1.5;
-//   }
-  
-//   @mixin h5 {
-//     font-family: $font-secondary;
-//     font-weight: bold;
-//     font-size: 1rem;
-//     line-height: 1.5;
-//   }
+@font-face {
+    font-family: "Manrope-Medium";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Light.ttf") format("truetype");
+}
+
+$font-primary: "Manrope",
+"Tahoma",
+"Arial",
+"Helvetica",
+sans-serif;
+$font-secondary: "Carneys",
+"Verdana",
+"Geneva",
+sans-serif;
+
+
+@mixin body-text {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+* {
+    @include body-text();
+}
+
+
+@mixin body-text-large {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+@mixin body-text-small {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+@mixin p{
+    font-family: $font-primary;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+}
+
+@mixin lead {
+    font-family: $font-primary;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+@mixin h1 {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 64px;
+    line-height: 51px;
+    letter-spacing: 3px;
+}
+
+@mixin h2 {
+    font-family: $font-primary;
+    font-family: Manrope;
+    font-size: 34px;
+    font-style: light;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin h3 {
+    font-family: $font-secondary;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+@mixin h4 {
+    font-family: $font-secondary;
+    line-height: 1.5;
+}
+
+@mixin h5 {
+    font-family: $font-secondary;
+    font-weight: bold;
+    line-height: 1.5;
+}

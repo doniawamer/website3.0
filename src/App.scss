@@ -1,69 +1,7 @@
 @import "../src/styles/config.scss";
 
-.page-container {
-  min-height: 100vh;
-  background-color: $secondary-1;
-}
-
-
 .app {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 32px;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-
-  &__container {
-    width: 100%;
-    padding: 1rem;
-    position: relative;
-  }
-
-  @media (min-width: $xs-breakpoint) {
-    &__container {
-      @include container($xs-breakpoint);
-    }
-  }
-
-  @media (min-width: $sm-breakpoint) {
-    &__container {
-      @include container($sm-breakpoint);
-    }
-  }
-
-  @media (min-width: $md-breakpoint) {
-    &__container {
-      @include container($md-breakpoint);
-    }
-  }
-  @media (min-width: $lg-breakpoint) {
-    &__container {
-      @include container($lg-breakpoint);
-    }
-  }
-  @media (min-width: $xl-breakpoint) {
-    &__container {
-      @include container($xl-breakpoint);
-    }
-  }
-}
-
-.skip-link {
-  @include visually-hidden;
-  
-  &:focus {
-    clip: auto;
-    clip-path: none;
-    height: auto;
-    width: auto;
-    outline-offset: -2px;
-    top: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: $secondary-1;
-    text-decoration: none;
-    background-color: $primary-1;
-    padding: 0.25rem 0.5rem;
-  }
+  &-container {
+    margin-top: 65px;
+  }  
 }

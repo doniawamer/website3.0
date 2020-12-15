@@ -1,6 +1,8 @@
+@import './normalize.scss';
+@import './skeleton.scss';
 @import './colours.scss';
 @import './typography.scss';
-@import './grid.scss';
+
 
 @mixin visually-hidden {
     position: absolute;
@@ -10,10 +12,56 @@
     width: 1px;
     overflow: hidden;
     white-space: nowrap;
-  }
-  
-  @mixin focus-border {
-    border-color: $blue;
+}
+
+@mixin focus-border {
+    border-color: $primary-2;
     outline: none;
-    box-shadow: 0 0 0 1px $blue;
-  }
+    box-shadow: 0 0 0 1px $primary-2;
+}
+
+
+html {
+    @include body-text;
+    color: $primary-1;
+}
+
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4 {
+    @include h4;
+}
+
+h5 {
+    @include h5;
+}
+
+
+a {
+    color: $primary-3;
+    text-decoration: none;
+    border-radius: 4px;
+    &:hover,
+    &:active,
+    &:visited:hover {
+        color: $primary-1;
+    }
+    &:visited {
+        color: $primary-3;
+    }
+
+    &:focus-visible{
+        color: $primary-1;
+    }
+}

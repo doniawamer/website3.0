@@ -1,16 +1,13 @@
 import './App.scss';
-import Header  from "./components/header/header.jsx";
+import Header from "./components/header/header.jsx";
+import Home from "./components/home/home.jsx";
 
 function App() {
   return (
-    <div className="page-container">
-      <a href="www.google.com" className="skip-link">
-        Skip link
-      </a>
+    <div className="app container">
       <Header />
-      <main id="main" className="app">
-          <div className="app__container">
-          </div>
+      <main id="main" className="app-container">
+      <Home />
       </main>
     </div>
   );
