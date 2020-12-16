@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Carneys";
+    font-weight: normal;
+    font-display: swap;
+    src: url('../assets/fonts/Carneys-Gallery.otf');
+}
+
+@font-face {
+    font-family: "Manrope-SemiBold";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope-Medium";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-weight: normal;
+    font-display: swap;
+    src: url("../assets/fonts/Manrope-Light.ttf") format("truetype");
+}
+
+$font-primary: "Manrope",
+"Tahoma",
+"Arial",
+"Helvetica",
+sans-serif;
+$font-secondary: "Carneys",
+"Verdana",
+"Geneva",
+sans-serif;
+
+
+@mixin body-text {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+* {
+    @include body-text();
+}
+
+
+@mixin body-text-large {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+@mixin body-text-small {
+    font-family: $font-primary;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+@mixin p{
+    font-family: $font-primary;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    @media (max-width: 1000px) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    @media (max-width: 550px) {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+@mixin p-alt{
+    font-family: $font-primary;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @media (max-width: 550px) {
+        font-size: 14px;
+    }
+}
+
+
+@mixin lead {
+    font-family: $font-primary;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    @media (max-width: 1000px) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    @media (max-width: 550px) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+
+@mixin h1 {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 64px;
+    line-height: 51px;
+    letter-spacing: 3px;
+    @media (max-width: 1000px) {
+        font-size: 36px;
+        line-height: 32px;
+    }
+    @media (max-width: 550px) {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@mixin h2 {
+    font-family: $font-primary;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    @media (max-width: 1000px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    @media (max-width: 550px) {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+@mixin h3 {
+    font-family: $font-secondary;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+@mixin h4 {
+    font-family: $font-secondary;
+    line-height: 1.5;
+}
+
+@mixin h5 {
+    font-family: $font-secondary;
+    font-weight: bold;
+    line-height: 1.5;
+}

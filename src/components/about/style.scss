@@ -1,0 +1,65 @@
+@import "../../styles/config.scss";
+
+.about {
+    height: calc(100vh - 65px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__body {
+        padding-right: 35px;
+        width: 55%;
+
+        &-title {
+            @include h1();
+            margin-bottom: 20px;
+        }
+
+        &-paragraph {
+            @include p-alt();
+            // margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        &-wrapper {
+            width: 55%;
+            overflow: hidden;
+        }
+
+        height: auto;
+        width: 100%;
+        max-width: 653px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        &__body {
+            width: unset;
+            padding: 35px 35px 0px 35px;
+            margin-top: 10px;
+
+            &-paragraph {
+                max-width: 100%;
+            }
+        }
+
+        &__img {
+            &-wrapper {
+                width: 100%;
+                margin-top: -10px;
+            }
+
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

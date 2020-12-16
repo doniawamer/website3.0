@@ -1,0 +1,83 @@
+@import "../../styles/config.scss";
+
+.home {
+    height: calc(100vh - 65px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__hero {
+        padding-left: 35px;
+        width: 55%;
+
+        &-pretitle {
+            @include lead();
+            margin-bottom: 0;
+        }
+
+        &-title {
+            @include h1();
+            margin-bottom: 5px;
+        }
+
+        &-subtitle {
+            @include h2();
+            margin-bottom: 5px;
+        }
+
+        &-blurb {
+            @include p();
+            max-width: 391px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        &-wrapper{
+            width: 45%;
+            overflow: hidden;
+        }
+        height: auto;
+        width: 100%;
+        max-width: 625px;
+    }
+}
+
+/* Larger than tablet */
+@media (max-width: 750px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &__hero {
+            // padding: 35px;
+            width: unset;
+            padding: 35px 35px 0px 35px;
+            margin-top: 20px;
+            &-blurb {
+                max-width: 100%;
+            }
+        }
+    
+        &__img {
+            &-wrapper{
+                width: 100%;
+                margin-top: -15px;
+            }
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .home{
+        &__hero {
+            margin-top: 10px;
+        }
+    }
+}
