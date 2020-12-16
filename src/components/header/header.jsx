@@ -9,7 +9,7 @@ const Header = () => {
           Skip to main content
         </a>
         <a href="#home" className="header__logo">
-          <img src="/images/logo.svg" alt="" className="header__logo-img" />
+          <img src="/images/logo.svg" alt="Donia Amer logo" className="header__logo-img" />
         </a>
 
         <nav className="navigation bracket-hover">
