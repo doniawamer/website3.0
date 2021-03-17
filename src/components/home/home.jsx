@@ -5,7 +5,7 @@ import copy from "../../assets/fonts/copy/copy.js"
 const Home = () => {
     const { PreTitle, Title, Subtitle, Blurb } = copy.Home;
     return (
-    <div className="home" id="home">
+    <section className="home" id="home">
         <div className="home__hero">
           <p className="home__hero-pretitle">{PreTitle}</p>
           <h1 className="home__hero-title">{Title}</h1>
@@ -15,7 +15,7 @@ const Home = () => {
         <div className="home__img-wrapper">
         <img src="/images/hero.png" className="home__img" alt="home"/>
         </div>
-    </div>
+    </section>
     )
   }
 

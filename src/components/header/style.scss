@@ -10,11 +10,10 @@
     padding: 15px 25px;
 
     &__logo {
-        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
         &:focus-visible {
-            outline: none !important;
-            border: 1px solid $primary-3;
-            border-radius: 4px;
+            @include focus-border();
         }
 
         &-img {
@@ -29,14 +28,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1650px;
 }
 
 .skip-link {
     @include visually-hidden;
 
     &:focus-visible {
-        outline: none !important;
         clip: auto;
         clip-path: none;
         height: auto;
@@ -47,9 +45,8 @@
         transform: translateX(-50%);
         text-decoration: none;
         background-color: $secondary-1;
-        border: 1px solid $primary-3;
-        border-radius: 4px;
         padding: 0.2rem 0.4rem;
+        @include focus-border();
     }
 }
 
@@ -62,10 +59,6 @@
     width: 54%;
 }
 
-.bracket-hover a {
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
 
 .bracket-hover a::before,
 .bracket-hover a::after {
@@ -103,9 +96,7 @@
 }
 
 .bracket-hover a:focus-visible {
-    outline: none !important;
-    border: 1px solid $primary-3;
-    border-radius: 4px;
+    @include focus-border();
 }
 
 @media (min-width: 1000px) {

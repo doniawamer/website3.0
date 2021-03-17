@@ -1,7 +1,8 @@
 @import "../../styles/config.scss";
 
 .about {
-    height: calc(100vh - 65px);
+    // margin-top: 65px;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +18,6 @@
 
         &-paragraph {
             @include p-alt();
-            // margin-bottom: 0;
         }
     }
 

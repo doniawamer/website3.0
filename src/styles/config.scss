@@ -15,9 +15,9 @@
 }
 
 @mixin focus-border {
-    border-color: $primary-2;
+    border-color: $primary-3;
     outline: none;
-    box-shadow: 0 0 0 1px $primary-2;
+    box-shadow: 0 0 0 1px $primary-3;
 }
 
 
@@ -51,7 +51,6 @@ h5 {
 a {
     color: $primary-3;
     text-decoration: none;
-    border-radius: 4px;
     &:hover,
     &:active,
     &:visited:hover {
@@ -62,6 +61,6 @@ a {
     }
 
     &:focus-visible{
-        color: $primary-1;
+        @include focus-border();
     }
 }

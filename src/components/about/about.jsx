@@ -5,7 +5,7 @@ import copy from "../../assets/fonts/copy/copy.js"
 const About = () => {
   const { Title, Body } = copy.About;
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
       <div className="about__img-wrapper">
         <img src="/images/about.png" className="about__img" alt="about me" />
       </div>
@@ -13,7 +13,7 @@ const About = () => {
         <p className="about__body-title">{Title}</p>
         {Body.map(paragraph => <p className="about__body-paragraph">{paragraph}</p>)}          
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -67,7 +67,7 @@ sans-serif;
     line-height: 1.5;
 }
 
-@mixin p{
+@mixin p(){
     font-family: $font-primary;
     font-size: 21px;
     font-style: normal;

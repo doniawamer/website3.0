@@ -34,7 +34,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1650px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -51,13 +51,15 @@
 @media (min-width: 320px) {
     .container {
         // width: 85%;
-        padding: 0;
+        // background-color: purple;
+        // padding: 0;
     }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
     .container {
+        // background-color: green;
         // width: 90%;
     }
 
@@ -614,14 +616,16 @@ hr {
 /* Larger than mobile */
 @media (min-width: 320px) {
     .container {
-        // background-color: orangered;
+        // background-color: cadetblue;
+        padding: 0;
     }
 }
 
-/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
     .container {
-        // background-color: orange;
+        // background-color: cornflowerblue;
+        padding: 0;
     }
 }
 
@@ -629,6 +633,7 @@ hr {
 @media (min-width: 750px) {
     .container {
         // background-color: yellow;
+        padding: 0;
     }
 }
 
@@ -636,6 +641,7 @@ hr {
 @media (min-width: 1000px) {
     .container {
         // background-color: greenyellow;
+        padding: 0;
     }
 }
 
@@ -643,5 +649,6 @@ hr {
 @media (min-width: 1200px) {
     .container {
         // background-color: blue;
+        padding: 0;
     }
 }
