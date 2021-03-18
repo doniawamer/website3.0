@@ -1,6 +1,6 @@
 @import "../../styles/config.scss";
 
-.about {
+.project {
     height: calc(100vh - 65px);
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 
 
 @media (max-width: 750px) {
-    .about {
+    .project {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
