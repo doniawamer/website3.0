@@ -1,5 +1,5 @@
 import './App.scss';
-import Header from "./components/header/header.jsx";
+import { Header } from "./components/header/header.jsx";
 import Home from "./components/home/home.jsx";
 import About from "./components/about/about.jsx";
 import Contact from "./components/contact/contact.jsx";

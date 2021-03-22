@@ -7,11 +7,18 @@
 
     background-color: $secondary-1;
     box-sizing: border-box;
-    padding: 15px 25px;
+    padding: 20px 25px;
+
+    &__shadow {
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
 
     &__logo {
         display: flex;
         align-items: center;
+
         &:focus-visible {
             @include focus-border();
         }

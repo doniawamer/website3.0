@@ -55,11 +55,13 @@
             &-wrapper {
                 width: 100%;
                 margin-top: -10px;
+                // display: flex;
+                // justify-content: center;
             }
 
             height: auto;
             width: 100%;
-            max-width: 100%;
+            // max-width: 80%;
         }
     }
 }

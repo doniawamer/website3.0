@@ -1,9 +1,29 @@
 import React from 'react';
+import { useState, useEffect } from "react"
 import "./style.scss";
 import copy from "../../assets/fonts/copy/copy.js"
 
-const Header = () => {
+export const SCROLL_DIRECTION_DOWN = "SCROLL_DIRECTION_DOWN"
+export const SCROLL_DIRECTION_UP = "SCROLL_DIRECTION_UP"
+export const SCROLL_DIRECTION_NONE = "SCROLL_DIRECTION_NONE"
+
+export const Header = () => {
   const { Skip, Nav } = copy.Header;
+  const [position, setPosition] = useState(0);
+  const [direction, setDirection] = useState(SCROLL_DIRECTION_NONE);
+
+  useScrollPosition(position => {
+    setPosition(position);
+  });
+
+  useScrollDirection(direction => {
+    setDirection(direction);
+  });
+
+  useEffect(() => {
+    console.log('>',position,direction);
+  }, [position, direction]);
+
   return (
     <header className="sticky">
       <div className="header">
@@ -24,5 +44,44 @@ const Header = () => {
   )
 }
 
+export const useScrollDirection = callback => {
+  const [lastYPosition, setLastYPosition] = useState(window.pageYOffset)
+  const [timer, setTimer] = useState(null)
 
-export default Header; 
+  const handleScroll = () => {
+    if (timer !== null) {
+      clearTimeout(timer);
+    }
+    setTimer(
+      setTimeout(function () {
+        callback(SCROLL_DIRECTION_NONE)
+      }, 150)
+    );
+    if (window.pageYOffset === lastYPosition) return SCROLL_DIRECTION_NONE;
+
+    const direction = (() => {
+      return lastYPosition < window.pageYOffset
+        ? SCROLL_DIRECTION_DOWN
+        : SCROLL_DIRECTION_UP
+    })();
+
+    callback(direction);
+    setLastYPosition(window.pageYOffset);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  })
+}
+
+export const useScrollPosition = callback => {
+  const handleScroll = () => {
+    callback(window.pageYOffset);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  })
+}
