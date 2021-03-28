@@ -25,7 +25,6 @@
     &__logo {
         display: flex;
         align-items: center;
-
         &:focus-visible {
             @include focus-border();
         }
