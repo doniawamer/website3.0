@@ -9,7 +9,7 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="contact__body">
         <h1 className="home__hero-title">{Title}</h1>
-        <p className="home__hero-subtitle">{Subtitle[0]} <a href="/pdfs/resume.pdf" className="contact__body-resume" download>{Subtitle[1]}</a>{Subtitle[2]}</p>
+        <p className="home__hero-subtitle">{Subtitle[0]} <a href="/pdfs/resume.pdf" className="contact__body-resume" download>{Subtitle[1]}</a></p>
         <ul className="contact__body-links">
           <li className="contact__body-link"><a href="https://github.com/unixcornthreads" className="contact__body-link">
             <img src="/images/github.png" className="contact__body-link-logo" target="_blank" rel="noreferrer" alt="Github" />
