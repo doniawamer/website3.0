@@ -7,7 +7,20 @@
 
     background-color: $secondary-1;
     box-sizing: border-box;
-    padding: 15px 25px;
+    padding: 20px 25px;
+
+    &__shadow-in {
+        transition: box-shadow .5s ease 0s;
+        -webkit-box-shadow: 0px 4px 4px -4px $primary-1;
+        -moz-box-shadow: 0px 4px 4px -4px $primary-1;
+        box-shadow: 0px 4px 4px -4px $primary-1;
+    }
+    &__shadow-out {
+        transition: box-shadow .5s ease 0s;
+        -webkit-box-shadow: 0 0 0 0transparent;
+        -moz-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0transparent;
+    }
 
     &__logo {
         display: flex;

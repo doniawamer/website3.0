@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className="about__body">
         <p className="about__body-title">{Title}</p>
-        {Body.map(paragraph => <p className="about__body-paragraph">{paragraph}</p>)}          
+        {Body.map((paragraph,i) => <p className="about__body-paragraph" key={i}>{paragraph}</p>)}          
       </div>
     </section>
   )

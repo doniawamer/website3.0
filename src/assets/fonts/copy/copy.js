@@ -22,8 +22,7 @@ let copy = {
         "Title": "Find me in my  corner of the internet",
         "Subtitle": [
             "or check out my", 
-            "resume",
-            "!"
+            "resume"
         ],
     }
 }
