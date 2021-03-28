@@ -11,6 +11,7 @@ export const Header = () => {
   const { Skip, Nav } = copy.Header;
   const [position, setPosition] = useState(0);
   const [direction, setDirection] = useState(SCROLL_DIRECTION_NONE);
+  const [shadow, setShadow] = useState(false);
 
   useScrollPosition(position => {
     setPosition(position);
@@ -21,12 +22,16 @@ export const Header = () => {
   });
 
   useEffect(() => {
-    console.log('>',position,direction);
+    if (position === 0 && direction !== SCROLL_DIRECTION_DOWN){
+      setShadow(false);
+    }else{
+      setShadow(true);
+    }
   }, [position, direction]);
 
   return (
     <header className="sticky">
-      <div className="header">
+      <div className={`header ${shadow? "header__shadow-in" : "header__shadow-out" }`}>
         <a href="#home" className="skip-link">
           {Skip}
         </a>
