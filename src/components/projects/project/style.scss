@@ -44,7 +44,7 @@
           color: $primary-3 !important;
         }
       }
-  
+
       &-desc{
         font-size: 12px;
         margin: 8px 0;
@@ -66,23 +66,14 @@
         font-size: 12px;
         margin-bottom: 15px;
       }
-  
     }
   }
 
   @media (max-width: 750px) {
-    .card{
-      background-color: red;
-
-      &-img{
+    .carousel_item, .carousel_item--hidden {
         display: none;
-      }
-  
     }
-  }
-
-  @media (max-width: 550px) {
-    .card{
-      background-color: purple;
-    }
+    .carousel_item--visible {
+      display: block;
+}
 }

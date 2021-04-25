@@ -24,15 +24,15 @@ let copy = {
                 "Title": "Project 1",
                 "Link": "https://github.com/unixcornthreads",
                 "Image": "/images/project1.png",
-                "Text": "Built on IBM's Hyperledger Fabric, Personal Health Network is a POC blockchain network that allows users to monitor all their health information.",
-                "Tech" : ["JS"]
+                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
+                "Tech" : ["JS", "React", "redux"]
             },
             {
                 "Title": "Project 1",
                 "Link": "https://github.com/unixcornthreads",
                 "Image": "/images/project1.png",
                 "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
-                "Tech" : ["JS"]
+                "Tech" : ["JS", "Angular", "next"]
             },
             {
                 "Title": "Personal 1",

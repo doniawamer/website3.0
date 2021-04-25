@@ -5,10 +5,11 @@ import Pills from "../pills/pills.jsx";
 
 const Project = (props) => {
   const {Title, Link, Image, Text, Tech} = props.cardInfo; 
+  const cardContainer = props.visible? "card carousel_item  carousel_item--visible" : "card carousel_item";
   return (
-    <div className="card"> 
+    <div className={cardContainer}> 
     <div className="card-body">
-      <img src={Image} className="card-img"/>
+      <img src={Image} className="card-img" alt="project snapshot"/>
       <p className="card-desc">{Text}</p>
       <Pills pillsArray={Tech} />
     </div>
@@ -21,15 +22,3 @@ const Project = (props) => {
 
 
 export default Project; 
-
-
-    {/* <div>
-      <img src={Image} className="card-img"/>
-      <h2 className="card-title"><a href={Link} >{Title}</a></h2>
-    </div>
-    <div className="card">
-      <p className="card-desc">{Text}</p>
-      <div className="pill-container">
-      <Pills pillsArray={Tech} />
-      </div>
-    </div> */}
