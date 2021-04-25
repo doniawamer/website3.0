@@ -1,21 +1,24 @@
 import React from 'react';
 import "./style.scss";
-import copy from "../../assets/fonts/copy/copy.js"
+import copy from "../../assets/fonts/copy/copy.js";
+import Project from "./project/project.jsx";
 
-const About = () => {
-  const { Title, Body } = copy.About;
+
+const Projects = () => {
+  const { Title, Cards } = copy.Projects;
   return (
-    <div className="about" id="about">
-      <div className="about__img-wrapper">
-        <img src="/images/about.png" className="about__img" alt="" />
-      </div>
-      <div className="about__body">
-        <p className="about__body-title">{Title}</p>
-        {Body.map(paragraph => <p className="about__body-paragraph">{paragraph}</p>)}          
-      </div>
-    </div>
+    <section className="projects" id="projects">
+        <p className="projects-title">{Title}</p>
+        <p className="projects-cards">
+        {
+          Cards.map((card) =>
+           <Project cardInfo={card} />
+          )
+        }
+        </p>       
+    </section>
   )
 }
 
 
-export default About; 
+export default Projects; 

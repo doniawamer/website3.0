@@ -1,0 +1,19 @@
+@import "../../../styles/config.scss";
+
+.pills{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background-color: $secondary-3;
+    color: $primary-1;
+    padding: 2px 18px;
+    text-align: center;
+    font-size: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 1px 2px;
+}

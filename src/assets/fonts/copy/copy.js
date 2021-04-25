@@ -17,7 +17,32 @@ let copy = {
             "My current toolset includes React, Angular, Typescript, and other various frameworks and libraries related to them. "
         ]
     },
-    "Portfolio": {},
+    "Projects": {
+        "Title":"Some of the things I’ve built",
+        "Cards": [
+            {
+                "Title": "Project 1",
+                "Link": "https://github.com/unixcornthreads",
+                "Image": "/images/project1.png",
+                "Text": "Built on IBM's Hyperledger Fabric, Personal Health Network is a POC blockchain network that allows users to monitor all their health information.",
+                "Tech" : ["JS"]
+            },
+            {
+                "Title": "Project 1",
+                "Link": "https://github.com/unixcornthreads",
+                "Image": "/images/project1.png",
+                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
+                "Tech" : ["JS"]
+            },
+            {
+                "Title": "Personal 1",
+                "Link": "https://github.com/unixcornthreads/Personal-Health-Network",
+                "Image": "/images/project1.png",
+                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
+                "Tech" : ["JS","HTML", "SASS"]
+            },
+        ]
+    },
     "Contact": {
         "Title": "Find me in my  corner of the internet",
         "Subtitle": [

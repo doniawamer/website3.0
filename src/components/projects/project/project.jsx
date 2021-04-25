@@ -1,21 +1,35 @@
 import React from 'react';
 import "./style.scss";
-import copy from "../../assets/fonts/copy/copy.js"
+import Pills from "../pills/pills.jsx";
 
-const About = () => {
-  const { Title, Body } = copy.About;
+
+const Project = (props) => {
+  const {Title, Link, Image, Text, Tech} = props.cardInfo; 
   return (
-    <div className="about" id="about">
-      <div className="about__img-wrapper">
-        <img src="/images/about.png" className="about__img" alt="" />
-      </div>
-      <div className="about__body">
-        <p className="about__body-title">{Title}</p>
-        {Body.map(paragraph => <p className="about__body-paragraph">{paragraph}</p>)}          
-      </div>
+    <div className="card"> 
+    <div className="card-body">
+      <img src={Image} className="card-img"/>
+      <p className="card-desc">{Text}</p>
+      <Pills pillsArray={Tech} />
+    </div>
+      <h2 className="card-title">
+        <a href={Link} className="card-link">{Title}</a>
+      </h2>
     </div>
   )
 }
 
 
-export default About; 
+export default Project; 
+
+
+    {/* <div>
+      <img src={Image} className="card-img"/>
+      <h2 className="card-title"><a href={Link} >{Title}</a></h2>
+    </div>
+    <div className="card">
+      <p className="card-desc">{Text}</p>
+      <div className="pill-container">
+      <Pills pillsArray={Tech} />
+      </div>
+    </div> */}
