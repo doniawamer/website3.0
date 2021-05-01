@@ -1,7 +1,5 @@
 @import "../../../styles/config.scss";
 
-
-
   .card{
       display: flex;
       flex-direction: column;
@@ -50,30 +48,13 @@
         margin: 8px 0;
       }
   
-  
   }
   
-  @media (max-width: 900px) {
-    .card{
-      width: 211px;
-      height: 285px;
+  .carousel_item{
+    display: none;
 
-      &-img{
-        display: none;
-      }
-
-      &-desc{
-        font-size: 12px;
-        margin-bottom: 15px;
-      }
+    &--visible{
+      display: inline-block;
     }
+   
   }
-
-  @media (max-width: 750px) {
-    .carousel_item, .carousel_item--hidden {
-        display: none;
-    }
-    .carousel_item--visible {
-      display: block;
-}
-}

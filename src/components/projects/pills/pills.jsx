@@ -5,8 +5,8 @@ const Pills = (props) => {
   return (
     <div className="pills">
       {
-        props.pillsArray.map((pill) =>
-        <span className="pill">
+        props.pillsArray.map((pill, i) =>
+        <span className="pill" key={i}>
           {pill}
         </span>
       )}   

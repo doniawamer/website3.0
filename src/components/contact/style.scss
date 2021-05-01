@@ -137,7 +137,7 @@
         &__img {
             &-wrapper {
                 width: 100%;
-                margin-top: -10px;
+                margin: -10px auto 0;
             }
         }
     }
@@ -146,6 +146,8 @@
 
 @media (max-width: 550px) {
     .contact__body{
+        padding-top: 85px;
+
         &-links{
             display: flex;
             list-style-type: none;

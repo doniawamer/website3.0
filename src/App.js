@@ -12,7 +12,7 @@ function App() {
       <main id="main" className="app-container">
       <Home />
       <About />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       </main>
     </div>

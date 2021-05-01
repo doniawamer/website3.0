@@ -1,9 +1,10 @@
-import React from 'react';
+import React , { useState, useEffect }from 'react';
 import "./style.scss";
 import copy from "../../assets/fonts/copy/copy.js"
 
 const About = () => {
   const { Title, Body } = copy.About;
+
   return (
     <section className="about" id="about">
       <div className="about__img-wrapper">

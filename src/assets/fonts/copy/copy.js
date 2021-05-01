@@ -28,14 +28,14 @@ let copy = {
                 "Tech" : ["JS", "React", "redux"]
             },
             {
-                "Title": "Project 1",
+                "Title": "Project 2",
                 "Link": "https://github.com/unixcornthreads",
                 "Image": "/images/project1.png",
                 "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
                 "Tech" : ["JS", "Angular", "next"]
             },
             {
-                "Title": "Personal 1",
+                "Title": "Personal 3",
                 "Link": "https://github.com/unixcornthreads/Personal-Health-Network",
                 "Image": "/images/project1.png",
                 "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo pulvinar facilisis justo pulvinar facilisis justo.",
