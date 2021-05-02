@@ -2,7 +2,7 @@ import './App.scss';
 import { Header } from "./components/header/header.jsx";
 import Home from "./components/home/home.jsx";
 import About from "./components/about/about.jsx";
-import Projects from "./components/projects/projects.jsx";
+// import Projects from "./components/projects/projects.jsx";
 import Contact from "./components/contact/contact.jsx";
 
 function App() {
