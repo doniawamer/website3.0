@@ -39,9 +39,9 @@ export const Header = () => {
           <img src="/images/logo.svg" alt="Donia Amer logo" className="header__logo-img" />
         </a>
         <nav className="navigation bracket-hover">
+          <a href="#projects" data-hover="Projects" className="hidden">{Nav[2]}</a>
           <a href="#home" data-hover="Home">{Nav[0]}</a>
           <a href="#about" data-hover="About">{Nav[1]}</a>
-          <a href="#projects" data-hover="Projects">{Nav[2]}</a>
           <a href="#contact" data-hover="Contact">{Nav[3]}</a>
         </nav>
       </div>

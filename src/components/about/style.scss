@@ -46,8 +46,15 @@
             padding: 35px 35px 0px 35px;
             margin-top: 10px;
 
+            &-title {
+               padding-top: 55px;
+            }
+    
+
             &-paragraph {
                 max-width: 100%;
+                font-size: 12px;
+                margin-bottom: 5px;
             }
         }
 

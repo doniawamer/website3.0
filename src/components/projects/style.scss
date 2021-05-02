@@ -1,65 +1,38 @@
 @import "../../styles/config.scss";
 
 .projects {
-    height: calc(100vh - 65px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0 35px;
+    box-sizing: border-box;
 
-    &__body {
-        padding-right: 35px;
-        width: 55%;
-
-        &-title {
-            @include h1();
-            margin-bottom: 15px;
-        }
-
-        &-paragraph {
-            @include p-alt();
-            // margin-bottom: 0;
-        }
-    }
-
-    &__img {
-        &-wrapper {
-            width: 55%;
-            overflow: hidden;
-        }
-
-        height: auto;
-        width: 100%;
-        max-width: 653px;
+    &-title {
+        @include h1();
+        padding: 100px 0 25px;
+        
     }
 }
 
-
-@media (max-width: 750px) {
-    .projects {
+.carousel{
+    &-container{
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
         align-items: center;
+    }
 
-        &__body {
-            width: unset;
-            padding: 35px 35px 0px 35px;
-            margin-top: 10px;
+    &-control{
+        border: none;
 
-            &-paragraph {
-                max-width: 100%;
-            }
+        &:disabled, 
+        &[disabled],
+        &:disabled:hover{
+            color: #666666;
         }
 
-        &__img {
-            &-wrapper {
-                width: 100%;
-                margin-top: -10px;
-            }
-
-            height: auto;
-            width: 100%;
-            max-width: 100%;
-        }
     }
 }
+

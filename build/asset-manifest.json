@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dd8f5d9.chunk.css",
-    "main.js": "/static/js/main.b971d3bc.chunk.js",
-    "main.js.map": "/static/js/main.b971d3bc.chunk.js.map",
+    "main.css": "/static/css/main.29716a70.chunk.css",
+    "main.js": "/static/js/main.31a3dc08.chunk.js",
+    "main.js.map": "/static/js/main.31a3dc08.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b4519c0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.b4519c0b.js.map",
     "static/js/2.1cd6b0d4.chunk.js": "/static/js/2.1cd6b0d4.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.ba1ec68a.chunk.js": "/static/js/3.ba1ec68a.chunk.js",
     "static/js/3.ba1ec68a.chunk.js.map": "/static/js/3.ba1ec68a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5dd8f5d9.chunk.css.map": "/static/css/main.5dd8f5d9.chunk.css.map",
+    "static/css/main.29716a70.chunk.css.map": "/static/css/main.29716a70.chunk.css.map",
     "static/js/2.1cd6b0d4.chunk.js.LICENSE.txt": "/static/js/2.1cd6b0d4.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/static/media/Manrope-SemiBold.26ad6bf1.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.b4519c0b.js",
     "static/js/2.1cd6b0d4.chunk.js",
-    "static/css/main.5dd8f5d9.chunk.css",
-    "static/js/main.b971d3bc.chunk.js"
+    "static/css/main.29716a70.chunk.css",
+    "static/js/main.31a3dc08.chunk.js"
   ]
 }
