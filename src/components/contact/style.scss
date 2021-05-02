@@ -261,3 +261,62 @@
         }
     }
 }
+
+
+@media (max-width: 550px) {
+    .contact__body{
+        &-links{
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            padding-right: 20px;
+            justify-content: space-between;
+        }
+        &-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid transparent;
+
+            &-logo{
+                display: flex;
+            }
+            &-hover{
+                display: none;
+            }
+
+            &:hover > &-logo{
+                display: none;
+            }
+
+            &:hover > &-hover{
+                display: flex;
+            }
+
+            &:focus{
+                border: 1px solid $primary-3;
+            }
+            img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+    .contact__img {
+        &-wrapper {
+            width: 100%;
+            margin-top: -10px;
+            padding-right: 0;
+            &-large,
+            &-medium {
+                display: none;
+            }
+
+            &-small {
+                display: flex;
+            }
+        }
+    }
+}
