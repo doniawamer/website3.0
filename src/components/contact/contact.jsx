@@ -11,11 +11,11 @@ const Contact = () => {
         <h1 className="home__hero-title">{Title}</h1>
         <p className="home__hero-subtitle">{Subtitle[0]} <a href="/pdfs/resume.pdf" className="contact__body-resume" download>{Subtitle[1]}</a></p>
         <ul className="contact__body-links">
-          <li className="contact__body-link"><a href="https://github.com/unixcornthreads" className="contact__body-link">
+          <li className="contact__body-link"><a href="https://github.com/doniawamer" className="contact__body-link">
             <img src="/images/github.png" className="contact__body-link-logo" target="_blank" rel="noreferrer" alt="Github" />
             <img src="/images/githubHover.png" className="contact__body-link-hover" target="_blank" rel="noreferrer" alt="Github" />
           </a></li>
-          <li className="contact__body-link"><a href="https://twitter.com/unixcornthreads" className="contact__body-link">
+          <li className="contact__body-link"><a href="https://twitter.com/doniawamer" className="contact__body-link">
             <img src="/images/twitter.png" className="contact__body-link-logo" target="_blank" rel="noreferrer" alt="Twitter" />
             <img src="/images/twitterHover.png" className="contact__body-link-hover" target="_blank" rel="noreferrer" alt="Twitter" />
           </a></li>
