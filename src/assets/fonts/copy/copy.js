@@ -7,14 +7,14 @@ let copy = {
         "PreTitle": "Hi there, my name is",
         "Title": "Donia Amer",
         "Subtitle": "I build (and occasionally design) things for the web",
-        "Blurb": "I’m a design oriented front-end developer that focuses on building immersive and accessible digital experiences"
+        "Blurb": "I’m a design oriented software engineer that focuses on building immersive and accessible digital experiences"
     },
     "About": {
         "Title": "About me",
         "Body": [
             "Hey there! I’m Donia, a computer engineer based in Toronto, Canada. Fueled by the challenge of solving complex problems and lots of iced coffee, I’m always inspired to build products that start with the user and end with innovation.",
             "After graduating from university and interning at IBM, I built impactful products with the front-end engineering team at Deloitte Digital for a couple years. Now, you can find me at KOHO on a mission to democratize the financial industry!",
-            "My current toolset includes React, Angular, Typescript, and other various frameworks and libraries related to them. "
+            "I currently specialize in Front-End! My current toolset includes React, Angular, Typescript, and other various frameworks and libraries related to them. "
         ]
     },
     "Projects": {
