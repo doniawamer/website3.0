@@ -13,7 +13,7 @@ let copy = {
         "Title": "About me",
         "Body": [
             "Hey there! I’m Donia, a computer engineer based in Toronto, Canada. Fueled by the challenge of solving complex problems and lots of iced coffee, I’m always inspired to build products that start with the user and end with innovation.",
-            "After graduating from university and interning at IBM, I built impactful products with the front-end engineering team at Deloitte Digital for a couple years. Now, you can find me at KOHO on a mission to democratize the financial industry!",
+            "After graduating from university and interning at IBM, I built impactful products with the front-end engineering team at Deloitte Digital for a couple years. I've spent some time at KOHO on a mission to democratize the financial industry and InVision working to make real-time collaboration better in this new remote era!",
             "I currently specialize in Front-End! My current toolset includes React, Angular, Typescript, and other various frameworks and libraries related to them. "
         ]
     },
